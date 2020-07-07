@@ -1,0 +1,34 @@
+{
+  "name": "license-stamper",
+  "version": "1.0.0",
+  "description": "stamp a license text from a file at the top each file in your repo in appropriate comment section",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -e 'require(`.`).run()' '.'"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "fs-extra": "^7.0.1",
+    "js-yaml": "^3.13.1",
+    "mkdirp": "^0.5.1",
+    "lodash": "^4.17.15",
+    "mustache": "^3.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anshumandas/license-stamper.git"
+  },
+  "keywords": [
+    "license",
+    "code",
+    "generation",
+    "automation",
+    "utility"
+  ],
+  "author": "Anshuman Das",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anshumandas/license-stamper/issues"
+  },
+  "homepage": "https://github.com/anshumandas/license-stamper#readme"
+}

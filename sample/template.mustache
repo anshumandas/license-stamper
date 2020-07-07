@@ -1,0 +1,34 @@
+{{!
+! Copyright 2020 License Stamper Contributors (https://github.com/anshumandas/license-stamper)
+! Copyright 2020 
+!
+! Licensed under the MIT, Version 1 (the "License");
+! A copy of the license is present in the root directory of the project in file LICENSE
+! You may not use this file except in compliance with the License.
+! You may obtain a copy of the License at
+!
+!     https://opensource.org/licenses/MIT
+!
+! Unless required by applicable law or agreed to in writing, software
+! distributed under the License is distributed on an "AS IS" BASIS,
+! WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+! See the License for the specific language governing permissions and
+! limitations under the License.
+}}
+{{{start}}}
+{{{line_start}}} Copyright {{#license}}{{year}}{{/license}} {{#project}}{{{name}}} Contributors {{#link}}({{{.}}}){{/link}}{{/project}}
+{{{line_start}}} Copyright {{#license}}{{year}}{{/license}} {{{company}}}
+{{{line_start}}}
+{{{line_start}}} Licensed under the {{#license}}{{type}}, Version {{version}} (the "License");
+{{#file}}{{{line_start}}} A copy of the license is present in the root directory of the project in file {{.}}{{/file}}
+{{{line_start}}} You may not use this file except in compliance with the License.
+{{#link}}{{{line_start}}} You may obtain a copy of the License at
+{{{line_start}}}
+{{{line_start}}}     {{{.}}}
+{{{line_start}}}{{/link}}{{/license}}
+{{{line_start}}} Unless required by applicable law or agreed to in writing, software
+{{{line_start}}} distributed under the License is distributed on an "AS IS" BASIS,
+{{{line_start}}} WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+{{{line_start}}} See the License for the specific language governing permissions and
+{{{line_start}}} limitations under the License.
+{{{end}}}
