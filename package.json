@@ -1,6 +1,6 @@
 {
   "name": "license-stamper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "stamp a license text from a file at the top each file in your repo in appropriate comment section",
   "main": "index.js",
   "scripts": {

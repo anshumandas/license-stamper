@@ -27,7 +27,15 @@ npm start
 Or
 ```
 npm i license-stamper --save-dev
-require('license-stamper').run(inputDir, outputDir, templatePath, configYamlPath)
+```
+and
+```
+node -e 'require(`license-stamper`).run()' '.'
+```
+
+or use the following in your pre publish pipeline
+```
+require('license-stamper').run(inputDir, outputDir, configYamlPath, templatePath)
 ```
 
 ## Contributions

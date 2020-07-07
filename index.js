@@ -61,12 +61,12 @@ function processFolder(inputDir, outputDir, config, template) {
    });
 }
 
-exports.run = function run(inputDir, outputDir, template, config) {
+exports.run = function run(inputDir, outputDir, config, template) {
   if(!inputDir && process.argv.length < 2) throw Error("Need folder path");
   inputDir = inputDir || process.argv[1];
   outputDir = outputDir || process.argv[2] || inputDir;
-  template = readFile(template || process.argv[3] || 'sample/template.mustache');;
-  config = readFile(config || process.argv[4] || 'sample/config.yaml');
+  config = readFile(config || process.argv[3] || __dirname + '/sample/config.yaml');
+  template = readFile(template || process.argv[4] || __dirname + '/sample/template.mustache');
   processFolder(inputDir, outputDir, config, template);
 }
 
